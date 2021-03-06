@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Código LaTeX</title>
+    
+
+    <script type="module">
+        import { LaTeXJSComponent } from "https://cdn.jsdelivr.net/npm/latex.js/dist/latex.mjs"
+        customElements.define("latex-js", LaTeXJSComponent)
+    </script>
+    <style>
+        latex-js {
+          display: inline-block;
+          border-color: red;
+          padding: 10px;
+          margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <hr>
+    <nav>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Instituto Politécnico Nacional</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Rodrigo Emmanuel Flores Avalos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Grupo 4CV12</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Maestro: Francisco Javier Benitez Diaz</a>
+            </li>
+          </ul>
+    </nav>
+    <hr>
+    <div class="fondo">
+        <div class="container">
+            <div class="principal">
+                <div class="cuerpo">
+                    <hr>
+                    <div class="lat">
+                        <latex-js baseURL="https://cdn.jsdelivr.net/npm/latex.js/dist/">
+                            \documentclass{article}
+                            \usepackage[utf8]{inputenc}
+                            \usepackage[spanish]{babel}
+                            \usepackage{amsmath}
+                            \usepackage{amssymb,amsfonts,latexsym,cancel}
+
+                            \title{Texto matematico \\ en formato digital}
+                            \author{Autor: Francisco Javier Benitez Diaz}
+                            \date{\today}
+
+                            \begin{document}
+
+                            \maketitle
+                            ---------------------------------------------------------------------------------------------------------------------------------
+
+                            Análogamente, para todo numero complejo $ z = (x,y)$ no nulo, existe un numero complejo $z ^{-1}$ tal que $zz ^{-1}=1$. Este inverso o multiplicativo es menos obvio que
+                            el aditivo. Para hallarlo, buscamos números reales $u,v$ expresados en términos
+                            de x e y, tales que
+
+                            \[
+                            (x, y)(u, v) = (1, 0)
+                            \]
+
+                            Según la Ecuación [5] de la Sección 1, que define el producto de dos números
+                            complejos u y v han de satisfacer el par
+
+                            \[
+                            u = \frac{x}{x^{2}+y^{2}}, \frac{-y}{x^{2}+y^{2}}
+                            \]
+
+                            De modo que el inverso multiplicativo de $z = (x, y)$ es
+                            \[
+                            z^{-1} = (\frac{x}{x^{2}+y^{2}}, \frac{-y}{x^{2}+y^{2}}) (z \neq 0)
+                            \]
+
+                            La existencia de inversos multiplicativos nos capacita para demostrar que $si un producto z_{1}z_{2} es cero, entonces al menos uno de los factores, z_{1}  o  z_{2}, es cero$. Porque supongamos que $z_{1}z_{2} = 0$ y que $z_{1} \neq 0$. El inverso multiplicativo $z_{1}^{-1}$ existe y, según la definición de la multiplicación, todo numero complejo por cero da cero
+                            
+                            \end{document}
+                        </latex-js>
+                    </div>
+                    <hr>
+                    <h1>Código</h1>
+                    <div class="imagen">
+                        <center><img src="/SRC/LATEX.png" alt="Código latex"></center>
+                    </div>
+                    <div class="tarea">
+                        <hr>
+                        <h6>Escribir el texto de la siguiente forma:</h6>
+                        <ul>
+                            <li>
+                                Codigo ascii, formato txt: 
+                                <button type="button" class="btn btn-success" id="bot1">
+                                    <a href="/ASCII.html">
+                                        Visualizar
+                                    </a>
+                                </button>
+                            </li>
+                            <li>
+                                html para poder verlo en un navegador:
+                                <button type="button" class="btn btn-success" id="bot">
+                                    <a href="/index.html">
+                                        Visualizar
+                                    </a>
+                                </button>
+                            </li>
+                            <li>
+                                usando latex, ponerlo en pdf: 
+                                <button type="button" class="btn btn-success" id="bot2">
+                                    <a href="#">
+                                        Código
+                                    </a>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <!--
+    <latex-js baseURL="https://cdn.jsdelivr.net/npm/latex.js/dist/">
+        \documentclass{article}
+
+        \begin{document}
+        Hello World.
+        \end{document}
+    </latex-js>
+    -->
+    <style>
+        .fondo{
+        background: #0f0c29;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        padding: 40px;
+
+        }
+        .ecuacion{
+            text-align: center;
+        }
+        nav{
+            background-color: #ffffff;
+        }
+        .container{
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 30px;
+        }
+        a{
+            color: #ffffff;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #ffffff;
+            text-decoration: none;
+        }
+        #bot{
+            margin-left: 50px;
+            margin-bottom: 20px;
+        }
+        #bot1{
+            margin-left: 155px;
+            margin-bottom: 20px;
+        }
+        #bot2{
+            margin-left: 125px;
+        }
+        
+    </style>
+</body>
+</html>
